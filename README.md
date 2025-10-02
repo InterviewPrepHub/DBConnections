@@ -21,15 +21,15 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql> show databases;
 
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-| test               |
-+--------------------+
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    | test               |
+    +--------------------+
 5 rows in set (0.06 sec)
 
 mysql> USE test;
@@ -38,17 +38,19 @@ You can turn off this feature to get a quicker startup with -A
 
 Database changed
 mysql> show tables;
-+----------------+
-| Tables_in_test |
-+----------------+
-| users          |
-+----------------+
+
+    +----------------+
+    | Tables_in_test |
+    +----------------+
+    | users          |
+    +----------------+
 1 row in set (0.00 sec)
 
 mysql> select * from users;
-+----+------+---------------+------------+-----------+
-| id | age  | created_at    | first_name | last_name |
-+----+------+---------------+------------+-----------+
-|  1 |   30 | 1743881294544 | John       | Doe       |
-+----+------+---------------+------------+-----------+
+
+    +----+------+---------------+------------+-----------+
+    | id | age  | created_at    | first_name | last_name |
+    +----+------+---------------+------------+-----------+
+    |  1 |   30 | 1743881294544 | John       | Doe       |
+    +----+------+---------------+------------+-----------+
 1 row in set (0.01 sec)
