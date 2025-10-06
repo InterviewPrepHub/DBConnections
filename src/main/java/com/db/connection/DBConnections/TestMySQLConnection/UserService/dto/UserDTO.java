@@ -1,4 +1,4 @@
-package com.db.connection.DBConnections.TestMySQLConnection.dto;
+package com.db.connection.DBConnections.TestMySQLConnection.UserService.dto;
 
 import lombok.Data;
 

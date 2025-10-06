@@ -1,8 +1,8 @@
-package com.db.connection.DBConnections.TestMySQLConnection.controller;
+package com.db.connection.DBConnections.TestMySQLConnection.UserService.controller;
 
-import com.db.connection.DBConnections.TestMySQLConnection.dto.UserDTO;
-import com.db.connection.DBConnections.TestMySQLConnection.entity.User;
-import com.db.connection.DBConnections.TestMySQLConnection.service.UserService;
+import com.db.connection.DBConnections.TestMySQLConnection.UserService.dto.UserDTO;
+import com.db.connection.DBConnections.TestMySQLConnection.UserService.entity.User;
+import com.db.connection.DBConnections.TestMySQLConnection.UserService.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

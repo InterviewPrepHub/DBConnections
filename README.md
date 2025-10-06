@@ -54,3 +54,54 @@ mysql> select * from users;
     |  1 |   30 | 1743881294544 | John       | Doe       |
     +----+------+---------------+------------+-----------+
 1 row in set (0.01 sec)
+
+
+## Set up AWS S3 after creating an AWS account
+
+1. Sign In to AWS Console
+   Go to https://aws.amazon.com/ and log in with your AWS account credentials.
+
+2. Create an S3 Bucket
+   Navigate to Services → S3.
+
+Click Create bucket.
+
+Enter a unique bucket name and select the AWS region closest to your users.
+
+Keep the defaults or adjust options like versioning, encryption, and access control as needed.
+
+Click Create bucket.
+
+3. Configure IAM User/Role
+   Go to Services → IAM (Identity and Access Management).
+
+Create a new IAM User (or Role) with Programmatic access.
+
+Assign the AmazonS3FullAccess policy (or a more restricted policy as required) to this user.
+
+Save the Access Key ID and Secret Access Key—you’ll need them for SDK/CLI setup.
+
+4. Install and Configure AWS CLI (Optional but Recommended)
+   Download and install the AWS CLI.
+
+Run aws configure and provide:
+
+Access Key ID
+
+Secret Access Key
+
+Default region (e.g., ap-south-1)
+
+Default output format (e.g., json)
+
+5. (Optional) Set Bucket Permissions
+   Edit bucket permissions as needed (public/private, CORS, etc.).
+
+For public file hosting, update the bucket policy to allow public read access (be mindful of security implications).
+
+6. Integrate S3 in Code or Tools
+   Use the access keys to configure SDKs (like AWS SDK for Java).
+
+Connect from your application and perform S3 actions (upload, list, download).
+
+

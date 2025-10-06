@@ -1,4 +1,4 @@
-package com.db.connection.DBConnections.TestMySQLConnection.entity;
+package com.db.connection.DBConnections.TestMySQLConnection.UserService.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
